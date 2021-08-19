@@ -125,6 +125,10 @@ h3 {
     padding: 20px;
 }
 
+button:hover {
+    box-shadow: dodgerblue;
+}
+
 .box-body {
     background-color: #fff;
     height: 269px;
@@ -170,9 +174,15 @@ h3 {
     padding-top: 18px;
 }
 
-
 .slider {
     background: #ffff;
+}
+
+.center .slider {
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    width: 50%;
 }
 
 .slider-container {
@@ -207,7 +217,9 @@ h3 {
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.5)
 }
 
+
 /*lecture-meeting*/
+
 .lecture-meeting {
     background: #d3d3d3;
     padding-bottom: 4em;
@@ -234,7 +246,6 @@ h3 {
     text-align: right;
     padding-right: 30px;
     box-sizing: border-box;
-
 }
 
 .meeting-header p:nth-child(2) {
@@ -258,7 +269,6 @@ h3 {
     right: 0;
     bottom: 0;
     padding-left: 5px;
-
 }
 
 .lecture-meeting form {
@@ -266,7 +276,6 @@ h3 {
     align-items: center;
     flex-direction: column;
     padding: 2em 0 2em 0;
-
 }
 
 .lecture-meeting form p {
@@ -358,7 +367,7 @@ h3 {
     padding-right: 2em;
 }
 
-.about header > p {
+.about header>p {
     font-size: 14px;
     padding-bottom: 1.5rem;
 }
@@ -368,7 +377,7 @@ h3 {
     height: 1px;
 }
 
-.about > p {
+.about>p {
     padding-bottom: 1.2rem;
 }
 
@@ -380,16 +389,13 @@ h3 {
     flex: 0 0 30%;
 }
 
-
 .site-footer h3 {
     font-size: 18px;
     color: #1a164c;
     padding-bottom: 1em;
 }
 
-.site-footer .initiatives ul {
-
-}
+.site-footer .initiatives ul {}
 
 .site-footer .initiatives li {
     display: block;

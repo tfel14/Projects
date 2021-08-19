@@ -1,9 +1,11 @@
 $(document).ready(() => {
     $('.slider .slide').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        centerMode: true,
+        infinite: true,
         dots: true,
     });
 });
@@ -35,6 +37,7 @@ const validateinputs = (e) => {
 
     if (msgs.length == 0) {
         return true;
+
     }
 
 };
@@ -47,10 +50,6 @@ send.addEventListener('click', (e) => {
     let appt = [document.getElementById(":").value, document.getElementById("dateTimeInput").value];
     let nme = appt[0].split(" ");
     let dT = appt[1].split(' ');
-    console.log(dT);
-
-
-    console.log(appt);
 
 
     let newLi = document.createElement('li');
@@ -66,7 +65,7 @@ send.addEventListener('click', (e) => {
     counter += 1;
     plus.innerHTML = counter;
 
-
+    $.notify("Consultation set!", "success");
     document.forms[0].reset();
 
 });
