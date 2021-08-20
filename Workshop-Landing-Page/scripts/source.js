@@ -23,11 +23,11 @@ var counter = 1;
 const validateinputs = (e) => {
     let msgs = [];
     if (uname.value === '' || uname.value == null) {
-        msgs.push('username is Required');
+        msgs.push('Username is Required');
     }
 
     if (regex.test(uname.value) == false) {
-        msgs.push('username is invalid');
+        msgs.push('Username is invalid');
     }
 
     if (msgs.length > 0) {
@@ -45,7 +45,7 @@ const validateinputs = (e) => {
 
 
 send.addEventListener('click', (e) => {
-
+    validateinputs(e);
 
     let appt = [document.getElementById(":").value, document.getElementById("dateTimeInput").value];
     let nme = appt[0].split(" ");
